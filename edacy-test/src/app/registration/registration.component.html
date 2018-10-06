@@ -1,0 +1,26 @@
+<div class="col-md-20">
+    <h2 class="text-center">Inscription</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">Login:</label>
+        <input formControlName="login" placeholder="Login" name="login" class="form-control" id="login">
+      </div>
+  
+      <div class="form-group">
+        <label for="firstName">Prenom:</label>
+        <input formControlName="firstName" placeholder="Prenom" name="firstName" class="form-control" id="firstName">
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Nom:</label>
+        <input formControlName="lastName" placeholder="Nom" name="lastName" class="form-control" id="lastName">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Mot de passe:</label>
+        <input formControlName="password" type="password" placeholder="Mot de passe" name="password" class="form-control" id="password">
+      </div>
+
+      <button class="btn btn-success">m'inscrire</button>
+    </form>
+  </div>

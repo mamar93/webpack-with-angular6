@@ -1,0 +1,27 @@
+
+<div class="col-md-20">
+    <h2 class="text-center">Authentification</h2>
+    <form [formGroup]="addForm"  name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+      <div class="form-group">
+        <label for="login">Login:</label>
+        <input formControlName="login"  placeholder="Login" name="login" class="form-control" id="login">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mot de passe:</label>
+        <input formControlName="password" type="password"  placeholder="Mot de passe" name="password" class="form-control" id="password">
+      </div>
+
+      <button class="btn btn-success">connexion</button>
+     <a  style="margin-left: 10px;" routerLink="/home">Home</a>
+    </form>
+  </div>
+
+
+
+
+  
+
+
+
+  

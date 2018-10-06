@@ -1,0 +1,33 @@
+<div style="width:1000px;margin:auto;" class="col-md-100 ">
+    <p>
+        Bienvenue {{getLogin()}} !
+    </p>
+    <p>
+        <a (click)="logout()" class="btn btn-danger btn-sm">
+            <span class="glyphicon glyphicon-log-out"></span>Deconnexion
+        </a>
+        <a (click)="udpatePassword()" style="margin-left: 4px;"class="btn btn-info btn-sm">
+                <span class="glyphicon glyphicon-log-out"></span>changer mon mot de passe
+            </a>
+
+    </p>
+    <h2>Tableau de bord</h2><br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Login</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>{{ user.login }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
